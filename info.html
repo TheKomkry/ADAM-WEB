@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/fire.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/info.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="navbar_logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/31/31101.png" alt="logo">
+        </div>
+        <!-- <a class="navbar-brand" href="/">Batchi's candles</a> -->
+        <a class="navbar-brand" href="/">Flamma</a>
+        <nav>
+            <ul id="menuList">
+                <li><a href="/">Produkty</a></li>
+                <li><a href="/info.html">&#9432; INFO</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu-open.svg" alt="OPEN MENU" id="menu-icon" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <div class="content">
+        <div class="light" onmouseenter="document.querySelector('.content').style.opacity = 1" onmouseleave="document.querySelector('.content').style.opacity = .5"></div>
+        <div class="fire">
+            <div class="back"></div>
+            <div class="medium"></div>
+            <div class="front"></div>
+        </div>
+    </div>
+    <div class="main">
+        <h2>idk, vymyslete si nějakej text</h2>
+    </div>
+    
+</body>
+</html>

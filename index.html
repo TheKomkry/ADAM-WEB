@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/fire.css">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Adámek web</title>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="navbar_logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/31/31101.png" alt="logo">
+        </div>
+        <!-- <a class="navbar-brand" href="/">Batchi's candles</a> -->
+        <a class="navbar-brand" href="/">Flamma</a>
+        <nav>
+            <ul id="menuList">
+                <li><a href="/">Produkty</a></li>
+                <li><a href="/info.html">&#9432; INFO</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu-open.svg" alt="OPEN MENU" id="menu-icon" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <div class="content">
+        <div class="light" onmouseenter="document.querySelector('.content').style.opacity = 1" onmouseleave="document.querySelector('.content').style.opacity = .5"></div>
+        <div class="fire">
+            <div class="back"></div>
+            <div class="medium"></div>
+            <div class="front"></div>
+        </div>
+    </div>
+    <div class="product-container">
+        <div>
+            <h1>Produkty</h1>
+        </div>
+        <div class="products">
+            <div class="parent" onclick="">
+                <div class="child bg-one" onclick="openInfo(this)">
+                </div>
+              </div>
+            <img src="https://unsplash.it/960/1790" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1792" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1793" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1794" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1795" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1796" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1797" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1798" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1799" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1799" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1798" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1797" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1796" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1795" alt="" onclick="openInfo(this)">
+            <img src="https://unsplash.it/960/1794" alt="" onclick="openInfo(this)">
+        </div>
+        <div class="product-info-container">
+            <div class="close-info" id="close-info" onclick="closeInfo()">&times;</div>
+            <div class="product-info">
+                <img src="" alt="IMG" id="info-img">
+                <div>
+                    <h1 id="info-name">Name</h1>
+                    <p id="info-description">Description</p>
+                    <p id="info-price">Price</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function openInfo(item){
+                document.querySelector('.product-info-container').style.display = 'block';
+                document.querySelector('#info-img').src = item.src;
+            }
+            function closeInfo(){
+                document.querySelector('.product-info-container').style.display = 'none';
+            }
+        </script>
+    </div>
+    <script src="js/header.js"></script>
+</body>
+</html>
